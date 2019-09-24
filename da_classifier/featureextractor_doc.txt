@@ -1,0 +1,29 @@
+Class feature_extractor
+
+Methods:
+    find_features():
+        Creates a dictionary containing various features of an utterance, to be used in dialogue act classification.
+        
+        Parameters:
+            Utterance: A single raw text utterance.
+            n: Determines how many of the first words are selected as features (default n = 9).
+            is_previous_speaker: Boolean value, True if utterance's speaker is same as previous speaker, False otherwise (default None).
+            previous_da: Dialogue act tag of the previous utterance (default None).
+            
+        Features:
+            first n words (lemmatized, padded with blank if less than n words)
+            first n pos-tags (lemmatized, padded with blank if less than n words)
+            presence of question mark
+            previous speaker
+            previous dialogue act
+            
+        Output: Dictionary-object.
+        
+    create_featuresets():
+        Goes through the Switchboard-corpus, and using find_features() creates a list of feature sets to be used in training a classifier.
+        
+        Parameters:
+            max_transcripts: Maximum number of transcripts to iterate (default 20).
+        
+        Output: List of dictionaries.
+            

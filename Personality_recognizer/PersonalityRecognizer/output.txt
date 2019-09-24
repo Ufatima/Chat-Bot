@@ -1,0 +1,17 @@
+
+
+Output of Support Vector Machine with Linear Kernel (SMOreg):
+-------------------------------------------------------------
+
+
+
+Self-assessed extraversion score:                   4.467
+Self-assessed emotional stability score:            -5.759
+Self-assessed agreeableness score:                  -0.52
+Self-assessed conscientiousness score:              -3.369
+Self-assessed openness to experience score:         -0.765
+
+Models are trained to output scores on a scale from 1 (low) to 7 (high),
+the scores might need to be normalized depending on the application domain.
+You can use models relative to your application domain and improve accuracies 
+by running the recognizer on multiple files using the -d switch.

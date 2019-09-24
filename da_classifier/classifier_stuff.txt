@@ -1,0 +1,6 @@
+tf/idf
+similarities between w1,w2,w3 and T1
+
+
+
+yahoo open directory

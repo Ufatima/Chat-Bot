@@ -1,0 +1,23 @@
+Textparse-module contains tools for parsing raw text.
+
+sentence_tokenize(raw_text)
+    Input:
+        Raw text.
+    Ouput:
+        List of sentences.
+
+check_question(sentence)
+    Input:
+        Raw text.
+    Ouput:
+        Boolean
+    Details:
+        Returns True if '?' in tokens, False otherwise.
+    
+parse_statement(raw_text, lemmatize = False)
+    Input:
+        Raw text.
+    Ouput:
+        List of dictionary objects. Dictionary keys are syntactic relations and values are lists of textual tokens. If optional argument lemmatize = True, tokens are lemmatized.
+    Details:
+        Using a breadth-first approach, assigns a key for each token of the current phrase, based on their syntactic relations. If a token is a conjunctive verb (defines a conjunctive subsentence), adds that verb to a job queue as a new root. Then, repeat the procedure for the new root. Each conjunctive sentence is returned as a separate dictionary. The values corresponding to keys are lists because they may contain multiple items.

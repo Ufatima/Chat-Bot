@@ -1,0 +1,17 @@
+logisticregression.pickle contains a trained dialogue act classifier. To use it:
+
+import pickle
+
+classifier_f = open("logisticregression.pickle", "rb")
+classifier = pickle.load(classifier_f)
+classifier_f.close()
+
+To classify an utterance:
+
+import feature_extractor
+from sklearn.linear_model import LogisticRegression
+
+utterance = "foo"
+fex = feature_extractor.feature_extractor()
+features = fex.find_features(utterance)
+da = classifier.classify(features)

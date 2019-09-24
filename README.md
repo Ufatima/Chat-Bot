@@ -1,5 +1,6 @@
-# Chatbot Course work 
-### team work
+# Web Chatbot
+## University of Oulu Course work 
+### Team work
 Applied computing project 1: Eliciting Argumentation From Online Dialogue Platform
 
 Eliciting Argumentation From Online Dialogue Platform

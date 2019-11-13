@@ -19,4 +19,8 @@ install_requirements.bat
 - try to Runs on windows
 
 ## Usage
-Run app.py and connect with your browser.
+Run 
+```bash
+python app.py
+```
+- And connect with your browser.

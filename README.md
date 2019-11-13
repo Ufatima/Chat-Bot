@@ -23,4 +23,4 @@ Run
 ```bash
 python app.py
 ```
-- And connect with your browser.
+And connect with your browser.

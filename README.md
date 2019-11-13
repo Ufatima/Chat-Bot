@@ -9,7 +9,10 @@ Eliciting Argumentation From Online Dialogue Platform
 - Python 3.5
 
 ## Installation
-- Run install_requirements.bat , This will take a while
+- Run (This will take a while)
+```bash
+install_requirements.bat
+```
 - Requires Java for personality recognition
 - Change the Java path in \Personality_recognizer\PersonalityRecognizer\PersonalityRecognizer.bat
 - Get the model folder from the link in Natural_language_generation\
